@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(#0009, #0009),
+      url("/vecteezy_nature-outdoor-forest-background_6466269.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    place-content: center;
+    position: relative;
+  }
+.game-box {
+    background-color: #000a;
+    width: 360px;
+    height: 360px;
+    outline: 2px solid #fff2;
+    border-radius: 36px;
+    display: grid;
+    grid-template-columns: auto auto auto;  
+    position: relative;
+    backdrop-filter: blur(5px);
+  }
+  
+  .single-box {
+    width: 119px;
+    height: 119px;
+    padding: 1rem;
+    cursor: pointer;
+  }
+
+  .divider {
+    position: absolute;
+    z-index: 999;
+    transform-origin: 0%;
+  }
+
+  .divider.d-v {
+    height: 360px;
+    width: 1px;
+    background-image: linear-gradient(to bottom, #0007, #fff9, #0007);
+  }
+
+  .divider.d-h {
+    width: 360px;
+    height: 1px;
+    background-image: linear-gradient(to right, #0007, #fff9, #0007);
+  }
+
+  .divider.d-1 {
+    top: 119px;
+  }
+
+  .divider.d-2 {
+    top: 239px;
+  }
+
+  .divider.d-3 {
+    left: 119px;
+  }
+
+  .divider.d-4 {
+    left: 239px;
+  }
+
